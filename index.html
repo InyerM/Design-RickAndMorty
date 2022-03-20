@@ -12,37 +12,42 @@
         <div class="form">
             <div class="form-content">
                 <h1>Filters</h1>
-                <form>
+                <form novalidate>
                     <div class="container-column">
                         <label for="character">Character</label>
-                        <input type="text" placeholder="Enter name" name="character" id="character" class="input-text">
+                        <input type="text" placeholder="Enter name" name="character" id="character" class="input-text" required>
+                        <div class="invalid"></div>
                     </div>
                     <div class="container-column">
                         <label for="status">Status</label>
-                        <select name="status" id="status" class="input-text">
+                        <select name="status" id="status" class="input-text" required>
                             <option selected disabled>Choose status</option>
                             <option>Alive</option>
                             <option>Dead</option>
                             <option>unknown</option>
                         </select>
+                        <div class="invalid"></div>
                     </div>
                     <div class="container-column">
                         <label for="species">Species</label>
-                        <input type="text" placeholder="Enter species" name="species" id="species" class="input-text">
+                        <input type="text" placeholder="Enter species" name="species" id="species" class="input-text" required>
+                        <div class="invalid"></div>
                     </div>
                     <div class="container-column">
                         <label for="gender">Gender</label>
-                        <select name="gender" id="gender" class="input-text">
+                        <select name="gender" id="gender" class="input-text" required>
                             <option selected disabled>Choose gender</option>
                             <option>Male</option>
                             <option>Female</option>
                             <option>Genderless</option>
                             <option>unknown</option>
                         </select>
+                        <div class="invalid"></div>
                     </div>
                     <div class="container-column">
                         <label for="origin">Origin</label>
-                        <input type="text" placeholder="Enter character origin" name="origin" id="origin"class="input-text">
+                        <input type="text" placeholder="Enter character origin" name="origin" id="origin"class="input-text" required>
+                        <div class="invalid"></div>
                     </div>
                     <div class="form-buttons">
                         <button type="button" onclick="fillTable()">Send</button>
