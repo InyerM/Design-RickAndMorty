@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Rick And Morty</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                     <div class="container-column">
                         <label for="character">Character</label>
                         <input type="text" placeholder="Enter name" name="character" id="character" class="input-text" required>
-                        <div class="invalid"></div>
+                        
                     </div>
                     <div class="container-column">
                         <label for="status">Status</label>
@@ -26,12 +27,12 @@
                             <option>Dead</option>
                             <option>unknown</option>
                         </select>
-                        <div class="invalid"></div>
+                        
                     </div>
                     <div class="container-column">
                         <label for="species">Species</label>
                         <input type="text" placeholder="Enter species" name="species" id="species" class="input-text" required>
-                        <div class="invalid"></div>
+                        
                     </div>
                     <div class="container-column">
                         <label for="gender">Gender</label>
@@ -39,15 +40,13 @@
                             <option selected disabled>Choose gender</option>
                             <option>Male</option>
                             <option>Female</option>
-                            <option>Genderless</option>
                             <option>unknown</option>
                         </select>
-                        <div class="invalid"></div>
                     </div>
                     <div class="container-column">
                         <label for="origin">Origin</label>
                         <input type="text" placeholder="Enter character origin" name="origin" id="origin"class="input-text" required>
-                        <div class="invalid"></div>
+                        
                     </div>
                     <div class="form-buttons">
                         <button type="button" onclick="fillTable()">Send</button>
@@ -85,6 +84,12 @@
         </div>
         </div>
     </div>
+    <div class="container-char">
+        <h1 id="info"></h1>
+        <div class="character-profile">
+
+        </div>
+    </div> 
 
     <script src="./js/app.js"></script>
 </body>
